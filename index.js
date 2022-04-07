@@ -62,6 +62,12 @@ async function run() {
 }
 run().catch(console.dir);
 
+app.get('/hello', (req, res) => {
+
+    res.send('updated here')
+});
+
+
 app.get('/', (req, res) => {
 
     res.send('running genius car here')
@@ -70,3 +76,24 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log('running pot', port)
 })
+
+
+/*
+one time:
+1.heroku account opne 
+2.heroku software install
+
+every project:
+1.git init 
+2. .gitignore
+3.push everythinh to git
+4.makesure you have this script:"start": "node index.js",
+5.make sure :port process.env.PORT in front of your number
+6.heroku login
+6.heroku create(only one time for a project)
+7.command:gti push heroku main
+
+update:
+1.git add,git commit,git push
+2.git push heroku main
+*/
