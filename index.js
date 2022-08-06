@@ -48,7 +48,7 @@ async function run() {
             res.send(services);
         })
 
-        // post api add data /ui thake requist asle e database e dakhabe insert data to the mongo from client site
+        // post api add data /ui thake requist asle e database e dakhabe/ insert data to the mongo from client site
         app.post('/services', async (req, res) => {
             const service=req.body
           console.log(service)
@@ -92,7 +92,7 @@ every project:
 6.heroku login
 6.heroku create(only one time for a project)
 7.command:gti push heroku main
-
+8.heroku>app>setting>add var(add DB_USER,DB_PASS)
 update:
 1.git add,git commit,git push
 2.git push heroku main
